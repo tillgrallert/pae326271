@@ -85,16 +85,18 @@ The very limited extent of digitisation is at least partially explained by the k
 
 [*Digitised*]{custom-style="EmphasisCustom"} should also not be conflated with [*openly accessible*]{custom-style="EmphasisCustom"} on the internet. Many are kept in data silos with no application programming interfaces ([API]{custom-style="Abbreviation"}s) or the option to manually download more than individual page images. They are protected from their readers by layers of paywalls, geofencing, and forced personal registration. [al-Muqtabas]{custom-style="Transcription"}, for example, is commonly deemed in the public domain by vendors in the United States. Copies from the [University of Minnesota](https://catalog.hathitrust.org/Record/100658549){--, [University of Virginia](https://catalog.hathitrust.org/Record/102043258),--} and [Princeton University](https://catalog.hathitrust.org/Record/008882293) {--have been scanned by Google and--} are openly available online through HathiTrust---for scholars at member institutions and the general public in the US as determined by a user's [IP]{custom-style="Abbreviation"} address. Everyone else will see blank pages or needs access to [VPN]{custom-style="Abbreviation"} services. Automated downloads frequently violate terms of use even if the vendor designates the material as being in the public domain. In one instance, such attempts by an academic resulted in (temporary) blanket block of an her home institution's entire [IP]{custom-style="Abbreviation"} range.
 
-In consequence, we witness a neo-colonial absence of the Global South from the digital cultural record [@Risam+2019; c.f. @Gooding+2018, 149-157; @Thylstrup+2018, 79-100]. The shocking differences are probably best illustrated by the comparison between the number of digitised Arabic periodicals and digitised newspapers from the German state of Hesse.
+In consequence, we witness a neo-colonial absence of the Global South from the digital cultural record [@Risam+2019; c.f. @Gooding+2018, 149-157; @Thylstrup+2018, 79-100]. The shocking differences are probably best illustrated by the comparison between the number of digitised Arabic periodicals and digitised newspapers from the German state of Hesse ([@tbl:digitisation]) [@HessischeRegionalzeitungen2019].
 
-|             | Arabic periodicals (1798--1929) |    Hessian regional newspapers (World War I)    | Chronicling America (1836--1923) |
-|-------------|---------------------------------|-------------------------------------------------|----------------------------------|
-| community   | c. 420 million Arabic speakers  | c. 6.2 million inhabitants                      | c. 330 million inhabitants       |
-| periodicals | 3269 newspapers and journals    |                                                 |                                  |
-| digitised   | 145 periodicals                 | 125 newspapers with more than 1.5 million pages | more than 16 million pages       |
-| type        | mostly facsimiles               | facsimiles, full text                           | facsimile, full text             |
-| access      | paywalls, geo-fencing           | open access                                     | open access                      |
-| interface   | mostly foreign languages only   | local and foreign languages                     | local language                   |
+|             | Arabic periodicals (1798--1929) | [WWI as mirrored by Hessian regional papers](https://hwk1.hebis.de) |
+|-------------|---------------------------------|---------------------------------------------------------------------|
+| community   | c. 420 million Arabic speakers  | c. 6.2 million inhabitants                                          |
+| periodicals | 3269 newspapers and journals    | 125 newspapers                                                      |
+| digitised   | 145 periodicals                 | 125 newspapers with more than 1.5 million pages                     |
+| type        | mostly facsimiles               | facsimiles, full text                                               |
+| access      | paywalls, geo-fencing           | open access                                                         |
+| interface   | mostly foreign languages only   | local and foreign languages                                         |
+
+Table: Comparison of [*digitised*]{custom-style="EmphasisCustom"} periodicals between the Global South and the Global North {#tbl:digitisation}
 
 ## Access to artefacts
 
