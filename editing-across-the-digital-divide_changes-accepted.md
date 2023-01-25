@@ -79,9 +79,9 @@ This leads to another major issue in the insufficient support for Arabic in the 
 
 ![Example of bidirectional XML from the beginning of [@oclc_1034545644-i_15-div_1.d2e634]. The coloured arrows indicate reading direction. The reading order is indicated by the numbers below the arrows](/Users/Shared/BachUni/publications/github/p0fb41f86/assets/figures/xml_zuhur-v_2-i_4_annotated.png){#fig:bidi-xml-oxygen}
 
-![Example of bidirectional XML from the beginning of [@oclc_1034545644-i_15-div_1.d2e634] as displayed in an editor without support for right-to-left scripts](https://openarabice.github.io/slides/assets/sublime_zuhur.png){#fig:bidi-xml-sublime-text}
+![Example of bidirectional XML from the beginning of [@oclc_1034545644-i_15-div_1.d2e634] as displayed in an editor without support for right-to-left scripts](https://openarabicpe.github.io/slides/assets/sublime_zuhur.png){#fig:bidi-xml-sublime-text}
 
-![Correctly rendered bidirectional XML beginning of [@oclc_1034545644-i_15-div_1.d2e634] in oXygen's author mode](https://openarabice.github.io/slides/assets/oxygen_zuhur-author.png){#fig:bidi-xml-oxygen-author}
+![Correctly rendered bidirectional XML beginning of [@oclc_1034545644-i_15-div_1.d2e634] in oXygen's author mode](https://openarabicpe.github.io/slides/assets/oxygen_zuhur-author.png){#fig:bidi-xml-oxygen-author}
 
 Beyond the fundamental impossibility to adequately record written Arabic in digital form, cultural heritage and practices of societies from the Global South require constant efforts of translation and transcription, themselves intrinsically entangled with the socio-technical traditions of the Global North [C.f. @DuganMontpellier2021MultipleScripts]. The aforementioned journal is a simple, yet powerful example. [al-Ustādh]{custom-style="Transcription"} is, of course, a transliteration of the Arabic title
  الاستاذ
