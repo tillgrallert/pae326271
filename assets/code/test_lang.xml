@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI>
+    <pb ed="print" edRef="#edition_1" facs="#facs_184" n="184" xml:id="pb_32.d2e883"/>
+    <div prev="oclc_1034545644-i_13.TEIP5.xml#div_1.d2e2766" subtype="article" type="item" xml:id="div_1.d2e634" xml:lang="ar">
+        <head xml:id="head_7.d2e636" xml:lang="ar">صحافة <placeName ref="geon:163843 oape:place:36" resp="#xslt" xml:id="placeName_5.d2e1194" xml:lang="ar">سورية</placeName> و<placeName ref="geon:273607 oape:place:203" resp="#xslt" xml:id="placeName_6.d2e1197" xml:lang="ar">لبنان</placeName></head>
+        <div type="section" xml:id="div_3.d2e1200" xml:lang="ar">
+            <head xml:id="head_9.d2e1202" xml:lang="ar">٣ - المجلات</head>
+            <p xml:id="p_2.d2e648" xml:lang="ar">هذه مقالتي الثالثة عن صحافة <placeName ref="geon:163843 oape:place:36" resp="#xslt">سورية</placeName> و<placeName ref="geon:273607 oape:place:203" resp="#xslt">لبنان</placeName>. . . ولا يخفى أن للانقلاب العثماني الأخير فضلاً عظيماً على هذه المجلات التي أنا ذاكر. فلم يكن منها قبل إعلان الدستور إلا <bibl resp="#xslt" subtype="journal" type="periodical" xml:id="bibl_3.d2e1530" xml:lang="ar">مجلة <title level="j" ref="oclc:473817521 jaraid:bibl:t1r679 oape:bibl:7" resp="#xslt" xml:id="title_23.d2e1532" xml:lang="ar">المشرق</title></bibl> و<bibl resp="#xslt" subtype="journal" type="periodical" xml:id="bibl_4.d2e1535" xml:lang="ar">مجلة <title level="j" ref="oclc:4770057679 jaraid:bibl:t1r3154 oape:bibl:9" resp="#xslt" xml:id="title_24.d2e1537" xml:lang="ar">المقتبس</title></bibl>.</p>
+            <p xml:id="p_2.d2e657" xml:lang="ar">أما بقية المجلات فقد صدرت في العامين الأخيرين كما يظهر لك في هذا المقال.</p>
+            <p xml:id="p_2.d2e660" xml:lang="ar">وقد اجتهدت، في هذا القسم، أن أذكر تاريخ صدور لهذه المجلات متخيراً أوثق المصادر في ذلك فأقول:</p>
+        </div>
+    </div>
+</TEI>
