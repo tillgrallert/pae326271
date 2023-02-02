@@ -634,14 +634,17 @@ nineteenth-century Eastern Mediterranean</h2>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
+<li><a href="#introduction" id="toc-introduction">Introduction</a></li>
 <li><a
-href="#creating-knowledge-about-artefacts-or-gathering-and-recording-data-about-data"
-id="toc-creating-knowledge-about-artefacts-or-gathering-and-recording-data-about-data">Creating
-knowledge about artefacts or gathering and recording data about data</a>
+href="#creating-knowledge-about-artifacts-or-gathering-and-recording-data-about-data"
+id="toc-creating-knowledge-about-artifacts-or-gathering-and-recording-data-about-data">Creating
+knowledge about artifacts or gathering and recording data about data</a>
 <ul>
-<li><a href="#the-power-of-monolingual-infrastructures-and-latin-script"
-id="toc-the-power-of-monolingual-infrastructures-and-latin-script">The
-power of monolingual infrastructures and Latin script</a></li>
+<li><a
+href="#the-representational-power-of-monolingual-infrastructures-and-latin-script"
+id="toc-the-representational-power-of-monolingual-infrastructures-and-latin-script">The
+representational power of monolingual infrastructures and Latin
+script</a></li>
 </ul></li>
 <li><a href="#creating-a-crowd-sourced-union-list"
 id="toc-creating-a-crowd-sourced-union-list">Creating a crowd-sourced
@@ -664,60 +667,95 @@ bio</a></li>
 <!-- beware that the wrapping brackets around pandoc citations must be removed from footnotes if they should not be wrapped in parentheses in the formatted output
     - Regex: \[([^\[]*?@.*?)\]
  -->
-<p>“Open Arabic Periodical Editions (OpenArabicPE)”<a href="#fn1"
-class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> was
-born in 2015 out of need and with a simple idea: Repurpose available
-data, tools and infrastructures in order to provide public and free
-access to reliable digital scholarly editions of early Arabic
-periodicals with the affordances in order to address the need for access
-to and information about such periodicals resulting from the
-multi-layered digital divides embodied in networked socio-technical
-infrastructures, computational tools, and digital artefacts
-themselves.</p>
+<h2 id="introduction">Introduction</h2>
 <p>In 2015, I had just finished my PhD on the history of the street in
-late Ottoman Damascus and moved to Beirut for a new post-doctoral
-research project on the genealogy of food riots across the predominantly
-Arabic-speaking Eastern Mediterranean from the nineteenth century to the
-present. The main source for both projects were periodicals—tens of
-thousands of newspaper and magazine articles published across the
+late Ottoman Damascus (1875–1914) and moved to Beirut for a new
+post-doctoral research project on the genealogy of food riots across the
+predominantly Arabic-speaking Eastern Mediterranean from the nineteenth
+century to the present <span class="citation"
+data-cites="Grallert+2019">(Grallert 2020)</span>. The main source for
+both projects were periodicals—tens of thousands of newspaper and
+magazine articles published in Arabic and Ottoman Turkish across the
 region. But despite their quotidian nature, their pivotal role for
 central cultural phenomena of the time as the region’s first mass
 medium, and ubiquitous references in scholarly literature, surprisingly
 little of substance is known about this medium in terms of individual
 publication histories, distribution channels, and audiences or the
 number and whereabouts of surviving copies. This is particularly true
-for locations beyond the centers of the press in Beirut and Cairo.<a
-href="#fn2" class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a></p>
+for periodicals published outside the centers of the press in Beirut and
+Cairo.<a href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a></p>
+<p>The sheer size of the corpus and the focus on social history
+suggested I muster help of computational tools and networked
+infrastructures to keep track of the events and developments I was
+interested in. Working with textual material in Arabic—one of the six
+official working languages of the United Nations but also a severely
+under-resourced language in the digital realm—and in a region with
+severely limited access to utilities forced me to learn more about the
+nitty-gritty details of the multidimensional infrastructural
+underpinnings of modern scholarship than I ever wanted.</p>
 <p>In spring 2015, I was part of the first Digital Humanities Institute
 – Beirut, organised by David Wrisley and Randa el Khatib, where I taught
-a course on TEI/XML with a focus on local, Arabic-speaking material. I
-also met Alex Gil, who introduced me to the idea of <span
-class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>minimal
-computing</em></span></p>
-<p>Working on Arabic texts and in a region with severely limited access
-to reliable electricity and internet connections forced me to learn more
-about the nitty-gritty details of infrastructural underpinnings of
-modern scholarship than I ever wanted.</p>
+a course on <span class="Abbreviation"
+data-custom-style="Abbreviation">TEI/XML</span> with a focus on local,
+Arabic-speaking material. I also met Alex Gil, who introduced me to the
+idea of <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>minimal computing</em></span></p>
+<p>The two projects featured in this essay, <a
+href="https://projectjaraid.github.io/">Jarāʾid</a> and “Open Arabic
+Periodical Editions (OpenArabicPE)”<a href="#fn2" class="footnote-ref"
+id="fnref2" role="doc-noteref"><sup>2</sup></a>, were born out of a
+two-fold need and with a simple idea: Creatively repurpose existing open
+data, tools, and infrastructures in order to provide sustainable public
+and free access to reliable knowledge about periodicals as well as
+high-quality digital editions and to do so not just in Latinized
+transcriptions as is established scholarly practice in the Global North
+but in their original script and languages.</p>
+<p>This essay is structured in two sections. The first section is
+concerned with creating the necessary knowledge about the history of the
+Arabic periodical press, its material artefacts, and existing digital
+remediations. It introduces catalogues as historical documents and the
+consequences of hegemonic monolingual technological infrastructures of
+the Global North for creating and recording knowledge about cultural
+artefacts and practices of societies in the Global South. Here, I use
+Arabic as a prime example how character encodings, rendering engines,
+and a complete lack of interest from market-dominating software vendors
+and platforms exercise epistemic violence <span class="citation"
+data-cites="Fiormonte2021Taxation">(Fiormonte 2021)</span>.</p>
 <h2
-id="creating-knowledge-about-artefacts-or-gathering-and-recording-data-about-data">Creating
-knowledge about artefacts or gathering and recording data about
+id="creating-knowledge-about-artifacts-or-gathering-and-recording-data-about-data">Creating
+knowledge about artifacts or gathering and recording data about
 data</h2>
 <p>The first need, therefore, was (and still is) a need for improving
 our knowledge about periodicals as the embodiment of socio-economic
 relations, intellectual traditions, and political frameworks, their
-manifestation in a limited number of material artefacts, the
-transmission of individual artefacts into private and public
-collections, and finally their occasional digital remediation. I would
-need to know which paper was published and potentially covered the
-series of food riots across cities of the Syrian hinterland, such as
-Hama and Homs in summer 1910 <span class="citation"
-data-cites="Grallert+2019">(C.f. Grallert 2020)</span>. I would then
-need to know if copies survived the turmoil that since wreaked havoc
-upon the region and its cultural heritage over the last century, where
-to find surviving copies, and how to access them.</p>
+manifestation in a limited number of material artifacts, the
+transmission of individual artifacts into private and public
+collections, and finally their occasional digital remediation. In order
+to investigate the extent of food riots across cities of the Syrian
+hinterland in summer 1910 <span class="citation"
+data-cites="Grallert+2019">(C.f. Grallert 2020)</span>, one would need
+to know which papers, if at all, were published in Hama, Homs or Nablus
+and therefore potentially published eye-witness accounts (fig. 1). One
+would then need to establish if copies survived the turmoil that wreaked
+havoc upon the region and its cultural heritage over the last century,
+where to find surviving copies, and how to access them.</p>
+<figure>
+<img
+src="/Users/Shared/BachUni/publications/github/pae326271/assets/images/map-periodicals_Bilād%20al-Shām_1908-1912_temp-dist.png"
+id="fig:map-periodicals-1908-12"
+alt="Figure 1: Map of all new Arabic periodicals published in Greater Syria between 1908 and 1912 based on (Mestyan, Grallert, and et al. 2020a)" />
+<figcaption aria-hidden="true">Figure 1: Map of all new Arabic
+periodicals published in Greater Syria between 1908 and 1912 based on
+<span class="citation"
+data-cites="MestyanEtAl2020JaraidDataset">(Mestyan, Grallert, and et al.
+2020a)</span></figcaption>
+</figure>
+<p>At this point we have to acknowledge the multi-layered digital
+divide, a chicken-egg problem of interwoven that is difficult to tease
+appart.</p>
 <p>Despite quotidian impressions to the contrary, many library
-catalogues have not been digitised or published online. This is
+catalogues have not been digitized or published online. This is
 particularly true for institutions outside the Global North and
 collections of material from the Global South. The website of the
 Lebanese National Library, for instance, still advertises its catalogue
@@ -736,13 +774,15 @@ class="persName" data-custom-style="persName">ʿAbdallāh Nadīm
 al-Idrīsī</span>’s weekly journal <span class="Transcription"
 data-custom-style="Transcription">al-Ustādh</span>, published in Cairo
 from 1892 to 1893, in Worldcat, we most likely will not encounter a
-record newly created from the material artefact by an expert cataloguer
+record newly created from the material artifact by an expert cataloguer
 with domain knowledge in Arabic periodicals and the ability to read
 Arabic script. Even if she will most likely have had to contend with
 technological systems ill-suited, if not unable, to deal with the
 metadata in its original script, calendars or naming conventions.</p>
-<h3 id="the-power-of-monolingual-infrastructures-and-latin-script">The
-power of monolingual infrastructures and Latin script</h3>
+<h3
+id="the-representational-power-of-monolingual-infrastructures-and-latin-script">The
+representational power of monolingual infrastructures and Latin
+script</h3>
 <p>Arabic is one of the main human languages with more than 420 million
 speakers as well as a writing system for many historic and contemporary
 Asian and African languages, such as Persian, Urdu, Pashtu, Ottoman,
@@ -759,7 +799,7 @@ data-custom-style="Transcription">rasm</span>, allow to decrease
 semantic ambiguity. Depending on writing style and typefonts, multiple
 letterforms will form ligatures. Letterforms and ligatures will not
 necessarily sit on a single baseline and baselines can be tilted
-(fig. 1). There are only few exceptions to these script-specific writing
+(fig. 2). There are only few exceptions to these script-specific writing
 rules across languages. Importantly for us, the diacritics are not
 strictly necessary for readers as is evidenced by recent efforts at
 circumventing surveillance and censorship of authoritarian Arab regimes
@@ -773,8 +813,8 @@ role="doc-noteref"><sup>3</sup></a></p>
 <img
 src="/Users/Shared/BachUni/publications/github/p0fb41f86/assets/figures/arabic-script_annotated.png"
 id="fig:arabic"
-alt="Figure 1: Example of basic Arabic typesetting from (Zakham 1907): “America and the Arab scholars”. The red arrow indicates the reading direction. Words are underlined in red. Ligatures of multiple letters are underlined in green." />
-<figcaption aria-hidden="true">Figure 1: Example of basic Arabic
+alt="Figure 2: Example of basic Arabic typesetting from (Zakham 1907): “America and the Arab scholars”. The red arrow indicates the reading direction. Words are underlined in red. Ligatures of multiple letters are underlined in green." />
+<figcaption aria-hidden="true">Figure 2: Example of basic Arabic
 typesetting from <span class="citation"
 data-cites="oclc_4770057679-i_13-div_8.d1e1249">(Zakham 1907)</span>:
 “America and the Arab scholars”. The red arrow indicates the reading
@@ -796,19 +836,19 @@ data-cites="Nemeth2018ArabicHotMetal Singh+2018+TheMachineIn">(Nemeth
 2018; Singh 2018)</span>. Computational systems not only derive from
 their type-setting ancestors and enforce Latin script grammar upon other
 writing systems, they also inherited the concept of national languages
-and do not consequently distinguish between scripts and languages <span
-class="citation"
-data-cites="Fiormonte.etal+2015+ThePoliticsof">(Fiormonte et al.
-2015)</span>. The character-encoding standard Unicode enabled
-vendor-independent exchange and interoperability of texts in Arabic
-script but it continues to adhere to the script grammar of Latin.<a
-href="#fn4" class="footnote-ref" id="fnref4"
-role="doc-noteref"><sup>4</sup></a> Unicode’s organising principle of
+and do not consequently distinguish between scripts and languages. The
+character-encoding standard Unicode enabled vendor-independent exchange
+and interoperability of texts in Arabic script but it continues to
+adhere to the script grammar of Latin and the affordances of movable
+type-printing <span class="citation"
+data-cites="FiormonteEtAl2015PoliticsOfCode">(c.f. Fiormonte et al.
+2015, 3–4)</span>.<a href="#fn4" class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a> Unicode’s organizing principle of
 code points is a confusing combination of scripts and languages that
 results in multiple code points for the same glyph. Anybody entering
 Arabic texts into a computer has to select one specific interpretation,
 one and only one Unicode representation of a textual string they want to
-encode. They have to either normalise historical or geographic
+encode. They have to either normalize historical or geographic
 orthographic variance or pick visually-matching but technically “wrong”
 glyphs. The resulting large variety of encodings for the same string of
 Arabic letterforms depends largely on the language of operating systems
@@ -825,11 +865,11 @@ maqṣūra</span> (U+0649: <span class="Arabic"
 data-custom-style="Arabic">ى</span>) or the Persian <span
 class="Transcription" data-custom-style="Transcription">ye</span>
 (U+06CC: <span class="Arabic" data-custom-style="Arabic">ی</span>) <span
-class="citation" data-cites="TaghiZadehEtAl2017NewHybridStemming">(C.f.
+class="citation" data-cites="TaghiZadehEtAl2017NewHybridStemming">(c.f.
 Taghi-Zadeh et al. 2017)</span>. Unfortunately, search algorithms built
 into modern operating systems are not aware of these variances and any
 application software relying on them will return skewed results without
-additional efforts at regularisation or a reduction to the <span
+additional efforts at regularization or a reduction to the <span
 class="Transcription" data-custom-style="Transcription">rasm</span>
 <span class="citation"
 data-cites="Milo.Martinez+2019+ANewStrategy">(Milo and Martínez
@@ -843,21 +883,19 @@ from right-to-left, and right-aligned is growing but remains
 hit-and-miss depending on operating systems and software
 applications—even on the web. <span class="Abbreviation"
 data-custom-style="Abbreviation">HTML5</span> is the current standard
-for structuring and presenting content on the World Wide Web maintained
-as a “living standard” by the <span class="EmphasisCustom"
+for structuring and presenting content on the World Wide Web. Developed
+since the mid-2000s, <span class="Abbreviation"
+data-custom-style="Abbreviation">HTML5</span> is maintained as a “living
+standard” by the <span class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>Web Hypertext Application
 Technology Working Group</em></span> (<span class="Abbreviation"
 data-custom-style="Abbreviation">WHATWG</span>), whose members are the
 leading vendors of web browsers: Apple, Google, Microsoft, and Mozilla.
-Developed since the mid-2000s, <span class="Abbreviation"
-data-custom-style="Abbreviation">HTML5</span> incorporates many aspects
-of <span class="Abbreviation"
-data-custom-style="Abbreviation">XHTML</span> and introduced much
-needed, detailed semantics. Most importantly for our discussion, <span
-class="Abbreviation" data-custom-style="Abbreviation">HTML5</span> added
-the global <code>@lang</code> attribute, which mirrors the earlier
-<code>@xml:lang</code> attribute and allows to explicitly specify the
-language of a document or parts thereof through the use of <span
+Most importantly for our discussion, <span class="Abbreviation"
+data-custom-style="Abbreviation">HTML5</span> added the global
+<code>@lang</code> attribute, which mirrors the earlier
+<code>@xml:lang</code> attribute for explicitly specifying the language
+of a document or parts thereof through the use of <span
 class="Abbreviation" data-custom-style="Abbreviation">BCP</span> 47
 language tags, such as “ar” for Arabic or “en” for English <span
 class="citation" data-cites="BCP47">(Network Working Group 2009)</span>.
@@ -868,18 +906,18 @@ in their built-in <span class="Abbreviation"
 data-custom-style="Abbreviation">CSS</span> for text-alignment or font
 selection. Even if a website declares its content as being written in
 Arabic, browsers such as Chrome, Firefox or Safari, do not correctly
-render the text as right-aligned (fig. 2). The necessary fix requires
+render the text as right-aligned (fig. 3). The necessary fix requires
 only a single line of code
 (<code>*[lang^="ar"] {direction:rtl;}</code>)—from everyone publishing
-text in right-to-left scripts on the Web. The problem is not aesthetics.
-Trailing punctuation marks become leading punctuation marks without
-these adjustments (Final line on fig. 2).</p>
+text in right-to-left scripts on the Web. The problem is not purely
+aesthetic. Trailing punctuation marks, for instance, become leading
+punctuation marks without these adjustments (Final line on fig. 3).</p>
 <figure>
 <img
-src="https://tillgrallert.github.io/slides/assets/dh/html5-lang_ar-chrome-2.png"
+src="/Users/Shared/BachUni/publications/github/pae326271/assets/images/html5-lang_ar-chrome.png"
 id="fig:arabic-fail-chrome"
-alt="Figure 2: The beginning of (Zakham 1907) as rendered in Chrome" />
-<figcaption aria-hidden="true">Figure 2: The beginning of <span
+alt="Figure 3: The beginning of (Zakham 1907) as rendered in Chrome" />
+<figcaption aria-hidden="true">Figure 3: The beginning of <span
 class="citation" data-cites="oclc_4770057679-i_13-div_8.d1e1249">(Zakham
 1907)</span> as rendered in Chrome</figcaption>
 </figure>
@@ -904,7 +942,7 @@ data-custom-style="Abbreviation">XML</span> editor added the relevant
 <span class="Abbreviation" data-custom-style="Abbreviation">CSS</span>
 for rendering <span class="Abbreviation"
 data-custom-style="Abbreviation">TEI/XML</span> in their “author mode”
-in 2015 (v17, see fig. 5) and in response to our feature request. But
+in 2015 (v17, see fig. 6) and in response to our feature request. But
 this support for correctly rendering Arabic and some other rtl languages
 is limited to <span class="Abbreviation"
 data-custom-style="Abbreviation">TEI/XML</span>.</p>
@@ -926,36 +964,44 @@ at the very beginning of the file needs to be written in Latin script,
 which, in turn, causes all computational tools to assume that they
 encounter a document with a left-to-right reading order (that at this
 point might or might not include bits and pieces in other writing
-systems) (fig. 3).</p>
+systems) (fig. 4).</p>
+<div class="columns">
+<div class="column">
 <figure>
 <img
 src="/Users/Shared/BachUni/publications/github/p0fb41f86/assets/figures/xml_zuhur-v_2-i_4_annotated.png"
 id="fig:bidi-xml-oxygen"
-alt="Figure 3: Example of bidirectional XML from the beginning of (Dammūs 1911). The coloured arrows indicate reading direction. The reading order is indicated by the numbers below the arrows" />
-<figcaption aria-hidden="true">Figure 3: Example of bidirectional XML
-from the beginning of <span class="citation"
+alt="Figure 4: Example of bidirectional XML of (Dammūs 1911). The colored arrows indicate reading direction. The reading order is indicated by the numbers below the arrows" />
+<figcaption aria-hidden="true">Figure 4: Example of bidirectional <span
+class="Abbreviation" data-custom-style="Abbreviation">XML</span> of
+<span class="citation"
 data-cites="oclc_1034545644-i_15-div_1.d2e634">(Dammūs 1911)</span>. The
-coloured arrows indicate reading direction. The reading order is
+colored arrows indicate reading direction. The reading order is
 indicated by the numbers below the arrows</figcaption>
 </figure>
+</div><div class="column">
 <figure>
 <img
-src="https://openarabicpe.github.io/slides/assets/sublime_zuhur.png"
+src="/Users/Shared/BachUni/publications/github/pae326271/assets/images/sublime_zuhur-bright.png"
 id="fig:bidi-xml-sublime-text"
-alt="Figure 4: Example of bidirectional XML from the beginning of (Dammūs 1911) as displayed in an editor without support for right-to-left scripts" />
-<figcaption aria-hidden="true">Figure 4: Example of bidirectional XML
-from the beginning of <span class="citation"
+alt="Figure 5: Example of bidirectional XML of (Dammūs 1911) as displayed in an editor without support for right-to-left scripts" />
+<figcaption aria-hidden="true">Figure 5: Example of bidirectional <span
+class="Abbreviation" data-custom-style="Abbreviation">XML</span> of
+<span class="citation"
 data-cites="oclc_1034545644-i_15-div_1.d2e634">(Dammūs 1911)</span> as
 displayed in an editor without support for right-to-left
 scripts</figcaption>
 </figure>
+</div>
+</div>
 <figure>
 <img
-src="https://openarabicpe.github.io/slides/assets/oxygen_zuhur-author.png"
+src="/Users/Shared/BachUni/publications/github/pae326271/assets/images/oxygen_zuhur-author.png"
 id="fig:bidi-xml-oxygen-author"
-alt="Figure 5: Correctly rendered bidirectional XML beginning of (Dammūs 1911) in oXygen’s author mode" />
-<figcaption aria-hidden="true">Figure 5: Correctly rendered
-bidirectional XML beginning of <span class="citation"
+alt="Figure 6: Correctly rendered bidirectional XML of (Dammūs 1911) in oXygen’s author mode" />
+<figcaption aria-hidden="true">Figure 6: Correctly rendered
+bidirectional <span class="Abbreviation"
+data-custom-style="Abbreviation">XML</span> of <span class="citation"
 data-cites="oclc_1034545644-i_15-div_1.d2e634">(Dammūs 1911)</span> in
 oXygen’s author mode</figcaption>
 </figure>
@@ -965,9 +1011,10 @@ from the Global South require constant efforts of translation and
 transcription, themselves intrinsically entangled with the
 socio-technical traditions of the Global North <span class="citation"
 data-cites="DuganMontpellier2021MultipleScripts">(C.f. Dugan and
-Montpellier 2021)</span>. The aforementioned journal is a simple, yet
-powerful example. <span class="Transcription"
-data-custom-style="Transcription">al-Ustādh</span> is, of course, a
+Montpellier 2021)</span>. The aforementioned journal <span
+class="Transcription" data-custom-style="Transcription">al-Ustādh</span>
+is a simple, yet powerful example. “<span class="Transcription"
+data-custom-style="Transcription">al-Ustādh</span>” is, of course, a
 transliteration of the Arabic title <span class="Arabic"
 data-custom-style="Arabic">الاستاذ</span> into Latin script, as is the
 rendering of the publisher’s name <span class="Arabic"
@@ -1002,25 +1049,25 @@ class="Transcription" data-custom-style="Transcription">Taṣvīr-i
 Efkār</span> <span class="citation"
 data-cites="EAP119/1/18_website">(British Library n.d.)</span>. Finally,
 such transcription schemes require diacritics not necessarily available
-on technical systems and not commonly recognised by the OCR-algorithms
-used for retro digitisation of card catalogues.</p>
+on technical systems and not commonly recognized by the OCR-algorithms
+used for retro digitization of card catalogues.</p>
 <p>Discovery systems across the board are unsuited for this plurality of
 scripts and the large variety of transcriptions. All come with
-idiosyncrasies of their own, such as internally removing or normalising
+idiosyncrasies of their own, such as internally removing or normalizing
 some or all diacritics from search queries. Worse, these choices are
 rarely documented and communicated to their users. Through ignorance or
 lack of interest in providing potentially costly services to communities
 outside the Global North and their cultural heritage, users are commonly
 left to their own tools and have to try each and every version of a
-string they can think of (see figs. 6-8).</p>
+string they can think of (see figs. 7-9).</p>
 <div class="columns">
 <div class="column">
 <figure>
 <img
 src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/jaraid/zdb_janna-ar.png"
 id="fig:zdb-ar"
-alt="Figure 6: Searching the union catalogue for periodicals in German-speaking countries for the journal al-Janna in Arabic script" />
-<figcaption aria-hidden="true">Figure 6: Searching the union catalogue
+alt="Figure 7: Searching the union catalogue for periodicals in German-speaking countries for the journal al-Janna in Arabic script" />
+<figcaption aria-hidden="true">Figure 7: Searching the union catalogue
 for periodicals in German-speaking countries for the journal <span
 class="Transcription" data-custom-style="Transcription">al-Janna</span>
 in Arabic script</figcaption>
@@ -1030,8 +1077,8 @@ in Arabic script</figcaption>
 <img
 src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/jaraid/zdb_janna-ar-Latn.png"
 id="fig:zdb-dmg"
-alt="Figure 7: Searching the union catalogue for periodicals in German-speaking countries for the journal al-Janna in DMG transcription (al-Ǧanna)" />
-<figcaption aria-hidden="true">Figure 7: Searching the union catalogue
+alt="Figure 8: Searching the union catalogue for periodicals in German-speaking countries for the journal al-Janna in DMG transcription (al-Ǧanna)" />
+<figcaption aria-hidden="true">Figure 8: Searching the union catalogue
 for periodicals in German-speaking countries for the journal <span
 class="Transcription" data-custom-style="Transcription">al-Janna</span>
 in <span class="Abbreviation"
@@ -1044,8 +1091,8 @@ data-custom-style="Transcription">al-Ǧanna</span>)</figcaption>
 <img
 src="/Users/Shared/BachUni/BachBibliothek/GitHub/slides/assets/jaraid/zdb_janna-ar-Latn-no-al.png"
 id="fig:zdb-dmg-defective"
-alt="Figure 8: Searching the union catalogue for periodicals in German-speaking countries for the journal al-Janna in in DMG transcription without diacritics or definite article (Ganna)" />
-<figcaption aria-hidden="true">Figure 8: Searching the union catalogue
+alt="Figure 9: Searching the union catalogue for periodicals in German-speaking countries for the journal al-Janna in in DMG transcription without diacritics or definite article (Ganna)" />
+<figcaption aria-hidden="true">Figure 9: Searching the union catalogue
 for periodicals in German-speaking countries for the journal <span
 class="Transcription" data-custom-style="Transcription">al-Janna</span>
 in in <span class="Abbreviation"
@@ -1063,7 +1110,7 @@ iterations since its inception by Adam Mestyan in the early 2010s <span
 class="citation"
 data-cites="Mestyan.etal+2020+JaraidAchronology Mestyan.Grallert+2012+ProjectJaraid Mestyan.Grallert+2020+JaraIdChronology">(Mestyan
 and Grallert 2012–2015, 2020; Mestyan, Grallert, and et al.
-2020)</span>. At its core, Jarāʾid is a volunteer effort of scholars
+2020b)</span>. At its core, Jarāʾid is a volunteer effort of scholars
 working with periodicals to openly share their collective knowledge
 about the publication history of Arabic periodical titles and their
 surviving copies, including digitised artefacts. I have been involved in
@@ -1137,31 +1184,31 @@ class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>sustainability</em></span>, and
 <span class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>credibility</em></span>.</p>
-<p>fig. 9 shows the distribution of all Arabic periodical titles
+<p>fig. 10 shows the distribution of all Arabic periodical titles
 published across South West Asia and North Africa (<span
 class="Abbreviation" data-custom-style="Abbreviation">SWANA</span>)
 between 1789 and 1929 based on the <a
-href="https://projectjaraid.github.io/">Jarāʾid</a> dataset. fig. 10
+href="https://projectjaraid.github.io/">Jarāʾid</a> dataset. fig. 11
 shows the 504 or 15,59% of all 3232 titles in this dataset that could be
 located in collections. Only 148 or 4,58% of all titles have been at
-least partially digitised.</p>
+least partially digitized.</p>
 <figure>
 <img
 src="/Users/Shared/BachUni/publications/github/p0fb41f86/assets/figures/map-jaraid_sf_mena_en-status_scatterpie.png"
 id="fig:map-periodicals-status"
-alt="Figure 9: Geographic distribution of Arabic periodical titles published across South West Asia and North Africa (SWANA) between 1789–1929. The size of the pie charts corresponds to the total number of titles published at a location. Slices show the percentage of known holdings and digitised collections." />
-<figcaption aria-hidden="true">Figure 9: Geographic distribution of
+alt="Figure 10: Geographic distribution of Arabic periodical titles published across South West Asia and North Africa (SWANA) between 1789–1929. The size of the pie charts corresponds to the total number of titles published at a location. Slices show the percentage of known holdings and digitized collections" />
+<figcaption aria-hidden="true">Figure 10: Geographic distribution of
 Arabic periodical titles published across South West Asia and North
 Africa (SWANA) between 1789–1929. The size of the pie charts corresponds
 to the total number of titles published at a location. Slices show the
-percentage of known holdings and digitised collections.</figcaption>
+percentage of known holdings and digitized collections</figcaption>
 </figure>
 <figure>
 <img
 src="/Users/Shared/BachUni/BachBibliothek/GitHub/Sihafa/sihafa_visualization/maps/map-data-set-periodical-holdings-global-north-na_mapped.png"
 id="fig:map-periodicals-holdings"
-alt="Figure 10: Map linking places of publication with known collections" />
-<figcaption aria-hidden="true">Figure 10: Map linking places of
+alt="Figure 11: Map linking places of publication with known collections" />
+<figcaption aria-hidden="true">Figure 11: Map linking places of
 publication with known collections</figcaption>
 </figure>
 <h2 id="access-to-artefacts">Access to artefacts</h2>
@@ -1188,8 +1235,8 @@ interfaces return high numbers of false positives. With the extent of
 false negatives—strings not found even though they are present in the
 original—impossible to determine, such data layers are nigh impossible
 to use beyond anecdotal evidence <span class="citation"
-data-cites="Grallert2022DHQ Grallert+2020">(Grallert 2021a, 64–65;
-2022b, sec. 13)</span>.</p>
+data-cites="Grallert2022DHQ Grallert+2020">(Grallert 2021, 64–65; 2022b,
+sec. 13)</span>.</p>
 <p><span class="Abbreviation"
 data-custom-style="Abbreviation">OCR</span> technologies for non-Latin
 scripts and ligatures such as Arabic have seen vast improvements with
@@ -1352,6 +1399,122 @@ data-custom-style="Transcription">al-Muqtabas</span> because of
 unsustainable maintenance costs and our editions’ evolving character.<a
 href="#fn9" class="footnote-ref" id="fnref9"
 role="doc-noteref"><sup>9</sup></a></p>
+<div id="tbl:corpus">
+<table>
+<caption>Table 2: <span class="Abbreviation"
+data-custom-style="Abbreviation">OpenArabicPE</span>’s corpus of
+periodical editions</caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 10%" />
+<col style="width: 7%" />
+<col style="width: 8%" />
+<col style="width: 42%" />
+<col style="width: 3%" />
+<col style="width: 3%" />
+<col style="width: 4%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Periodical</th>
+<th>Place</th>
+<th>Publisher</th>
+<th>Dates<a href="#fn10" class="footnote-ref" id="fnref10"
+role="doc-noteref"><sup>10</sup></a></th>
+<th>DOI</th>
+<th style="text-align: right;">Volumes</th>
+<th style="text-align: right;">Issues</th>
+<th style="text-align: right;">Words</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a
+href="https://github.com/OpenArabicPE/journal_al-haqaiq">al-Ḥaqāʾiq</a></td>
+<td>Damascus</td>
+<td>ʿAbd al-Qādir al-Iskandarānī</td>
+<td>1910–13</td>
+<td><a
+href="https://doi.org/10.5281/zenodo.1232016">10.5281/zenodo.1232016</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">298090</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://www.github.com/openarabicpe/journal_al-manar">al-Manār</a>
+<a href="#fn11" class="footnote-ref" id="fnref11"
+role="doc-noteref"><sup>11</sup></a></td>
+<td>Cairo</td>
+<td>Muḥammad Rashīd Riḍā</td>
+<td>1898–1918</td>
+<td></td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">387</td>
+<td style="text-align: right;">c.3000000</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://github.com/OpenArabicPE/journal_al-muqtabas">al-Muqtabas</a></td>
+<td>Cairo, Damascus</td>
+<td>Muḥammad Kurd ʿAlī</td>
+<td>1906–18</td>
+<td><a
+href="https://doi.org/10.5281/zenodo.597319">10.5281/zenodo.597319</a></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">1981081</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/OpenArabicPE/journal_al-ustadh">al-Ustādh</a></td>
+<td>Cairo</td>
+<td>ʿAbdallāh Nadīm al-Idrīsī</td>
+<td>1892–93</td>
+<td><a
+href="https://doi.org/10.5281/zenodo.3581028">10.5281/zenodo.3581028</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">221447</td>
+</tr>
+<tr class="odd">
+<td><a
+href="https://www.github.com/openarabicpe/journal_al-zuhur">al-Zuhūr</a></td>
+<td>Cairo</td>
+<td>Anṭūn al-Jumayyil</td>
+<td>1910–13</td>
+<td><a
+href="https://doi.org/10.5281/zenodo.3580606">10.5281/zenodo.3580606</a></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">292333</td>
+</tr>
+<tr class="even">
+<td><a
+href="https://github.com/OpenArabicPE/journal_lughat-al-arab">Lughat
+al-ʿArab</a></td>
+<td>Baghdad</td>
+<td>Anastās Mārī al-Karmalī</td>
+<td>1911–14</td>
+<td><a
+href="https://doi.org/10.5281/zenodo.3514384">10.5281/zenodo.3514384</a></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">373832</td>
+</tr>
+<tr class="odd">
+<td><strong>total</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">645</td>
+<td style="text-align: right;">c.6166783</td>
+</tr>
+</tbody>
+</table>
+</div>
 <p><a href="http://www.shamela.ws/"><span class="Transcription"
 data-custom-style="Transcription">al-Maktaba al-shāmila</span></a> (The
 Comprehensive Library, 2005–, henceforth <span class="EmphasisCustom"
@@ -1407,7 +1570,7 @@ section (<span class="Transcription"
 data-custom-style="Transcription">akhbār wa afkār</span>), such as <span
 class="citation"
 data-cites="oclc_4770057679-i_61-div_21.d1e2838">(<em>al-Muqtabas</em>
-1911)</span>, were not recorded fig. 11. The same is true for explicitly
+1911)</span>, were not recorded fig. 12. The same is true for explicitly
 authorship information in bylines. We tried to catch both phenomena in
 multiple iterations of our conversion processes based on the length of
 paragraphs (<code>&lt;p&gt;</code>) and their position within the
@@ -1442,8 +1605,8 @@ data-custom-style="Abbreviation">TEI/XML</span> files.</p>
 <img
 src="https://openarabicpe.github.io/slides/assets/shamela_muqtabas-annotated.png"
 id="fig:muqtabas-6-2-shamela"
-alt="Figure 11: (al-Muqtabas 1911) on Shamela" />
-<figcaption aria-hidden="true">Figure 11: <span class="citation"
+alt="Figure 12: (al-Muqtabas 1911) on Shamela" />
+<figcaption aria-hidden="true">Figure 12: <span class="citation"
 data-cites="oclc_4770057679-i_61-div_21.d1e2838">(<em>al-Muqtabas</em>
 1911)</span> on <a
 href="http://shamela.ws/browse.php/book-26523#page-4046"><span
@@ -1454,8 +1617,8 @@ data-custom-style="EmphasisCustom"><em>Shamela</em></span></a></figcaption>
 <img
 src="http://images.eap.bl.uk/EAP119/EAP119_1_4_5/133.jp2/full/800,/0/gray.jpg"
 id="fig:muqtabas-6-2-133-eap"
-alt="Figure 12: Facsimile of (al-Muqtabas 1911) from EAP" />
-<figcaption aria-hidden="true">Figure 12: Facsimile of <span
+alt="Figure 13: Facsimile of (al-Muqtabas 1911) from EAP" />
+<figcaption aria-hidden="true">Figure 13: Facsimile of <span
 class="citation"
 data-cites="oclc_4770057679-i_61-div_21.d1e2838">(<em>al-Muqtabas</em>
 1911)</span> from <a href="https://eap.bl.uk/"><span
@@ -1473,14 +1636,14 @@ class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>Shamela</em></span>’s
 transcriptions, on the other hand, abolished volumes as organising
 principle and count (available) issues in a consecutive sequence (see
-the sidebar in fig. 11).<br />
+the sidebar in fig. 12).<br />
 Locating the corresponding issue therefore required knowledge about
 every periodical’s actual publication schedule. This could usually only
 be established by accessing physical copies or digital facsimiles
 because journals frequently diverted from their official publication
-schedule by publishing fewer issues per volume.<a href="#fn10"
-class="footnote-ref" id="fnref10"
-role="doc-noteref"><sup>10</sup></a></p>
+schedule by publishing fewer issues per volume.<a href="#fn12"
+class="footnote-ref" id="fnref12"
+role="doc-noteref"><sup>12</sup></a></p>
 <p><span class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>Shamela</em></span>
 human-readable dating information at the beginning of each issue proved
@@ -1500,9 +1663,10 @@ publishing the scans of Arabic periodical collections in the al-Aqṣā
 Mosque’s library in Jerusalem (<a
 href="https://eap.bl.uk/project/EAP119"><span class="Abbreviation"
 data-custom-style="Abbreviation">EAP119</span></a>) in the early 2010s
-<a href="#fn11" class="footnote-ref" id="fnref11"
-role="doc-noteref"><sup>11</sup></a> but has since added links to
-facsimiles from [HathiTrust][hathitrust], <a
+<a href="#fn13" class="footnote-ref" id="fnref13"
+role="doc-noteref"><sup>13</sup></a> but has since added links to
+facsimiles from <a href="http://catalog.hathitrust.org/">HathiTrust</a>,
+<a
 href="https://www.translatio.uni-bonn.de/online-zeitschriften/arabische-online-zeitschriften">Translatio</a>,
 and <a href="http://archive.alsharekh.org/"><span class="Transcription"
 data-custom-style="Transcription">Arshīf al-majallāt al-adabiyya
@@ -1525,13 +1689,14 @@ data-custom-style="Abbreviation">OpenArabicPE</span>.</p>
 <p>Ultimately, locating page breaks in the text stream in order to link
 them to digital facsimiles proved to be the most labour-intensive task.
 Recording the original position of page breaks had apparently not been a
-priority for the anonymous transcribers. While some periodicals
-faithfully followed the original, others did not and introduced their
-own page breaks. fig. 11 and fig. 12 demonstrate this mismatch. While
-<span class="EmphasisCustom"
+priority for <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Shamela</em></span>’s anonymous
+transcribers. While some periodicals faithfully followed the original,
+others did not and introduced their own page breaks. fig. 12 and fig. 13
+demonstrate this mismatch. While <span class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>Shamela</em></span> recorded the
-page number as 45 (fig. 11), digital facsimiles from EAP show the
-article was published on page 133 (fig. 12). Consequently, every one of
+page number as 45 (fig. 12), digital facsimiles from EAP show the
+article was published on page 133 (fig. 13). Consequently, every one of
 the c.8000 page breaks in the journals <a
 href="https://github.com/OpenArabicPE/journal_al-muqtabas"><span
 class="Transcription"
@@ -1539,8 +1704,8 @@ data-custom-style="Transcription">al-Muqtabas</span></a> and <a
 href="https://github.com/OpenArabicPE/journal_al-haqaiq"><span
 class="Transcription"
 data-custom-style="Transcription">al-Ḥaqāʾiq</span></a> needed to be
-manually marked up by volunteers.<a href="#fn12" class="footnote-ref"
-id="fnref12" role="doc-noteref"><sup>12</sup></a> My gratitude goes to
+manually marked up by volunteers.<a href="#fn14" class="footnote-ref"
+id="fnref14" role="doc-noteref"><sup>14</sup></a> My gratitude goes to
 Dimitar Dragnev, Talha Güzel, Dilan Hatun, Hans Magne Jaatun, Xaver
 Kretzschmar, Daniel Lloyd, Klara Mayer, Tobias Sick, Manzi Tanna-Händel
 and Layla Youssef, who contributed their time to this task.</p>
@@ -1552,7 +1717,8 @@ institutions. Links to externally hosted facsimiles, on the other hand,
 are the most volatile component of our data layer and we already
 encountered three major instances of link rot. Two were caused by
 vendors moving servers and changing protocols: The British Library moved
-the Endangered Archives Programme to <span class="Abbreviation"
+<span class="Abbreviation" data-custom-style="Abbreviation">EAP</span>
+to <span class="Abbreviation"
 data-custom-style="Abbreviation">IIIF</span> in 2017 and <span
 class="Transcription" data-custom-style="Transcription">Arshīf
 al-majallāt al-adabiyya wa-l-thaqāfiyya al-ʿarabiyya</span> moved to a
@@ -1568,144 +1734,6 @@ new <span class="Abbreviation"
 data-custom-style="Abbreviation">URL</span>s (if any) and to write the
 necessary scripts to update all <span class="Abbreviation"
 data-custom-style="Abbreviation">TEI</span> files.</p>
-<p>The corpus comprises six fully searchable editions: <span
-class="persName" data-custom-style="persName">Muḥammad Kurd
-ʿAlī</span>’s journal <span class="Transcription"
-data-custom-style="Transcription">al-Muqtabas</span> (Cairo and
-Damascus, 1906–18, not to be confused with his newspaper of the same
-name), <span class="persName" data-custom-style="persName">ʿAbd al-Qādir
-al-Iskandarānī</span>’s <span class="Transcription"
-data-custom-style="Transcription">al-Ḥaqāʾiq</span> (Damascus, 1910–12),
-<span class="persName" data-custom-style="persName">Anastās Mārī
-al-Karmalī</span>’s <span class="Transcription"
-data-custom-style="Transcription">Lughat al-ʿArab</span> (Baghdad,
-1911–14), <span class="persName" data-custom-style="persName">Muḥammad
-Rashīd Riḍā</span>’s <span class="Transcription"
-data-custom-style="Transcription">al-Manār</span> (Cairo, 1898–1940),
-<span class="persName" data-custom-style="persName">Anṭūn
-al-Jumayyil</span>’s <span class="Transcription"
-data-custom-style="Transcription">al-Zuhūr</span> (Cairo, 1910–13), and
-<span class="persName" data-custom-style="persName">ʿAbdallāh Nadīm
-al-Idrīsī</span>’s weekly journal <span class="Transcription"
-data-custom-style="Transcription">al-Ustādh</span> (Cairo, 1892–1893).<a
-href="#fn13" class="footnote-ref" id="fnref13"
-role="doc-noteref"><sup>13</sup></a></p>
-<div id="tbl:corpus">
-<table>
-<caption>Table 2: <span class="Abbreviation"
-data-custom-style="Abbreviation">OpenArabicPE</span>’s corpus of
-periodical editions</caption>
-<colgroup>
-<col style="width: 19%" />
-<col style="width: 10%" />
-<col style="width: 8%" />
-<col style="width: 40%" />
-<col style="width: 5%" />
-<col style="width: 4%" />
-<col style="width: 4%" />
-<col style="width: 6%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Periodical</th>
-<th>Place</th>
-<th>Dates<a href="#fn14" class="footnote-ref" id="fnref14"
-role="doc-noteref"><sup>14</sup></a></th>
-<th>DOI</th>
-<th>Volumes</th>
-<th>Issues</th>
-<th style="text-align: right;">Words</th>
-<th style="text-align: right;">Size (MB)<a href="#fn15"
-class="footnote-ref" id="fnref15"
-role="doc-noteref"><sup>15</sup></a></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a
-href="https://github.com/OpenArabicPE/journal_al-haqaiq">al-Ḥaqāʾiq</a></td>
-<td>Damascus</td>
-<td>1910–13</td>
-<td><a
-href="https://doi.org/10.5281/zenodo.1232016">10.5281/zenodo.1232016</a></td>
-<td>3</td>
-<td>35</td>
-<td style="text-align: right;">298090</td>
-<td style="text-align: right;">15</td>
-</tr>
-<tr class="even">
-<td><a
-href="https://www.github.com/openarabicpe/journal_al-manar">al-Manār</a></td>
-<td>Cairo</td>
-<td>1898–1918</td>
-<td></td>
-<td>20</td>
-<td>387</td>
-<td style="text-align: right;">c.3000000</td>
-<td style="text-align: right;">NA</td>
-</tr>
-<tr class="odd">
-<td><a
-href="https://github.com/OpenArabicPE/journal_al-muqtabas">al-Muqtabas</a></td>
-<td>Cairo, Damascus</td>
-<td>1906–18</td>
-<td><a
-href="https://doi.org/10.5281/zenodo.597319">10.5281/zenodo.597319</a></td>
-<td>9</td>
-<td>96</td>
-<td style="text-align: right;">1981081</td>
-<td style="text-align: right;">107.6</td>
-</tr>
-<tr class="even">
-<td><a
-href="https://github.com/OpenArabicPE/journal_al-ustadh">al-Ustādh</a></td>
-<td>Cairo</td>
-<td>1892–93</td>
-<td><a
-href="https://doi.org/10.5281/zenodo.3581028">10.5281/zenodo.3581028</a></td>
-<td>1</td>
-<td>42</td>
-<td style="text-align: right;">221447</td>
-<td style="text-align: right;">13.1</td>
-</tr>
-<tr class="odd">
-<td><a
-href="https://www.github.com/openarabicpe/journal_al-zuhur">al-Zuhūr</a></td>
-<td>Cairo</td>
-<td>1910–13</td>
-<td><a
-href="https://doi.org/10.5281/zenodo.3580606">10.5281/zenodo.3580606</a></td>
-<td>4</td>
-<td>39</td>
-<td style="text-align: right;">292333</td>
-<td style="text-align: right;">25.6</td>
-</tr>
-<tr class="even">
-<td><a
-href="https://github.com/OpenArabicPE/journal_lughat-al-arab">Lughat
-al-ʿArab</a></td>
-<td>Baghdad</td>
-<td>1911–14</td>
-<td><a
-href="https://doi.org/10.5281/zenodo.3514384">10.5281/zenodo.3514384</a></td>
-<td>3</td>
-<td>34</td>
-<td style="text-align: right;">373832</td>
-<td style="text-align: right;">35</td>
-</tr>
-<tr class="odd">
-<td><strong>total</strong></td>
-<td></td>
-<td></td>
-<td></td>
-<td>41</td>
-<td>645</td>
-<td style="text-align: right;">c.6166783</td>
-<td style="text-align: right;"></td>
-</tr>
-</tbody>
-</table>
-</div>
 <h2 id="conclusion">Conclusion</h2>
 <h1 id="contributor-bio">Contributor bio</h1>
 <h1 class="unnumbered" id="bibliography">Bibliography</h1>
@@ -1814,7 +1842,15 @@ States: The Arabic Serial Holdings of Seventeen Libraries</em>.
 Occasional Papers. Urbana: University of Illinois, Graduate School of
 Library and Information Science.
 </div>
-<div id="ref-Fiormonte.etal+2015+ThePoliticsof" class="csl-entry"
+<div id="ref-Fiormonte2021Taxation" class="csl-entry"
+role="doc-biblioentry">
+Fiormonte, Domenico. 2021. <span>“Taxation Against Overrepresentation?
+The Consequences of Monolingualism for Digital Humanities.”</span> In
+<em>Alternative Historiographies of the Digital Humanities</em>, edited
+by Dorothy Kim and Adeline Koh, 333–76. Earth: punctum books. <a
+href="https://doi.org/10.53288/0274.1.00">https://doi.org/10.53288/0274.1.00</a>.
+</div>
+<div id="ref-FiormonteEtAl2015PoliticsOfCode" class="csl-entry"
 role="doc-biblioentry">
 Fiormonte, Domenico, Desmond Schmidt, Paolo Monella, and Paolo Sordi.
 2015. <span>“The Politics of Code. How Digital Representations and
@@ -1834,41 +1870,20 @@ Gooding, Paul. (2017) 2018. <em>Historic Newspapers in the Digital Age:
 <span>“Search All about It”</span></em>. London: Routledge, Taylor &amp;
 Francis.
 </div>
-<div id="ref-OpenArabicPE:journal_al-manar" class="csl-entry"
-role="doc-biblioentry">
-Grallert, Till. 2019a. <span>“An open, collaborative, and scholarly
-digital edition of Rashīd Riḍā’s monthly journal <span>‘al-Manār’</span>
-(Cairo, 1898--1940).”</span> OpenArabicPE. <a
-href="https://github.com/openarabicpe/journal_al-manar">https://github.com/openarabicpe/journal_al-manar</a>.
-</div>
-<div id="ref-OpenArabicPE:journal_al-ustadh" class="csl-entry"
-role="doc-biblioentry">
-———. 2019b. <span>“An open, collaborative, and scholarly digital edition
-of ʿAbd Allāh Nadīm al-Idrīsī’s weekly journal <span>‘al-Ustādh’</span>
-(Cairo, 1892--1893).”</span> OpenArabicPE. <a
-href="https://doi.org/10.5281/zenodo.3581028">https://doi.org/10.5281/zenodo.3581028</a>.
-</div>
 <div id="ref-Grallert+2019" class="csl-entry" role="doc-biblioentry">
-———. 2020. <span>“Urban Food Riots in Late Ottoman Bilād Al-Shām as a
-<span>‘Repertoire of Contention’</span>.”</span> In <em>Crime, Poverty
-and Survival in the Middle East and North Africa: The <span>“Dangerous
-Classes”</span> Since 1800</em>, edited by Stephanie Cronin, 157–76.
-London: I.B. Tauris. <a
+Grallert, Till. 2020. <span>“Urban Food Riots in Late Ottoman Bilād
+Al-Shām as a <span>‘Repertoire of Contention’</span>.”</span> In
+<em>Crime, Poverty and Survival in the Middle East and North Africa: The
+<span>“Dangerous Classes”</span> Since 1800</em>, edited by Stephanie
+Cronin, 157–76. London: I.B. Tauris. <a
 href="https://doi.org/10.5040/9781838605902.ch-010">https://doi.org/10.5040/9781838605902.ch-010</a>.
 </div>
 <div id="ref-Grallert+2020" class="csl-entry" role="doc-biblioentry">
-———. 2021a. <span>“Catch Me If You Can! Approaching the Arabic Press of
+———. 2021. <span>“Catch Me If You Can! Approaching the Arabic Press of
 the Late Ottoman Eastern Mediterranean Through Digital History.”</span>
 Edited by Simone Lässig. <em>Geschichte Und Gesellschaft</em> 47 (1,
 Digital History): 58–89. <a
 href="https://doi.org/gkhrjr">https://doi.org/gkhrjr</a>.
-</div>
-<div id="ref-OpenArabicPE:journal_al-zuhur" class="csl-entry"
-role="doc-biblioentry">
-———. 2021b. <span>“An open, collaborative, and scholarly digital edition
-of Anṭūn al-Jumayyil’s monthly journal <span>‘al-Zuhūr’</span> (Cairo,
-1910--1913).”</span> OpenArabicPE. <a
-href="https://doi.org/10.5281/zenodo.3580606">https://doi.org/10.5281/zenodo.3580606</a>.
 </div>
 <div id="ref-Grallert2022IntegratingLibraryData" class="csl-entry"
 role="doc-biblioentry">
@@ -1883,31 +1898,6 @@ Bootstrapped Scholarly Editions Outside the Global North.”</span> Edited
 by Roopika Risam and Alex Gil. <em>Digital Humanities Quarterly</em> 16
 (2, "Minimal Computing"). <a
 href="http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html">http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html</a>.
-</div>
-<div id="ref-OpenArabicPE:journal_lughat-al-arab" class="csl-entry"
-role="doc-biblioentry">
-Grallert, Till, and Patrick Funk. 2022. <span>“An open, collaborative,
-and scholarly digital edition of Anastās Mārī al-Karmalī’s monthly
-journal <span>‘Lughat al-ʿArab’</span> (Baghdad, 1911--14).”</span>
-OpenArabicPE. <a
-href="https://doi.org/10.5281/zenodo.3514384">https://doi.org/10.5281/zenodo.3514384</a>.
-</div>
-<div id="ref-OpenArabicPE:journal_al-muqtabas" class="csl-entry"
-role="doc-biblioentry">
-Grallert, Till, Manzi Tanna Händel, Dimitar Dragnev, Klara Mayer, and
-Daniel Lloyd. 2020. <span>“An open, collaborative, and scholarly digital
-edition of Muḥammad Kurd ʿAlī’s monthly journal
-<span>‘al-Muqtabas’</span> (Cairo and Damascus, 1906-1917/18).”</span>
-OpenArabicPE. <a
-href="https://doi.org/10.5281/zenodo.597319">https://doi.org/10.5281/zenodo.597319</a>.
-</div>
-<div id="ref-OpenArabicPE:journal_al-haqaiq" class="csl-entry"
-role="doc-biblioentry">
-Grallert, Till, Xaver Kretzschmar, Jakob Koppermann, and Talha Güzel.
-2022. <span>“An open, collaborative, and scholarly digital edition of
-ʿAbd al-Qādir al-Iskandarānī’s monthly journal <span>‘al-Ḥaqāʾiq’</span>
-(Damascus, 1910--12).”</span> OpenArabicPE. <a
-href="https://doi.org/10.5281/zenodo.1232016">https://doi.org/10.5281/zenodo.1232016</a>.
 </div>
 <div id="ref-Grallert+2017a" class="csl-entry" role="doc-biblioentry">
 Grallert, Till, Jochen Tiepmar, Thomas Eckart, Dirk Goldhan, and
@@ -2009,8 +1999,14 @@ href="https://projectjaraid.github.io/">https://projectjaraid.github.io/</a>.
 </div>
 <div id="ref-Mestyan.etal+2020+JaraidAchronology" class="csl-entry"
 role="doc-biblioentry">
-Mestyan, Adam, Till Grallert, and et al. 2020. <span>“Jarāʾid: A
+Mestyan, Adam, Till Grallert, and et al. 2020b. <span>“Jarāʾid: A
 Chronology of Arabic Periodicals (1800-1929).”</span> Zenodo. <a
+href="https://doi.org/10.5281/zenodo.4399240">https://doi.org/10.5281/zenodo.4399240</a>.
+</div>
+<div id="ref-MestyanEtAl2020JaraidDataset" class="csl-entry"
+role="doc-biblioentry">
+———. 2020a. <span>“Jarāʾid: A Chronology of Arabic Periodicals
+(1800-1929).”</span> Zenodo. <a
 href="https://doi.org/10.5281/zenodo.4399240">https://doi.org/10.5281/zenodo.4399240</a>.
 </div>
 <div id="ref-Miller+2018" class="csl-entry" role="doc-biblioentry">
@@ -2186,17 +2182,17 @@ href="https://doi.org/ggwwhh">https://doi.org/ggwwhh</a>.
 role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1"><p>Available online at <a
+<li id="fn1"><p>For a detailed overview of the state of Arab Periodical
+Studies see <span class="citation" data-cites="Grallert+2020">(Grallert
+2021)</span>.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Available online at <a
 href="https://openarabicpe.github.io"
 class="uri">https://openarabicpe.github.io</a> and <a
 href="https://github.com/openarabicpe"
 class="uri">https://github.com/openarabicpe</a>. See also <span
 class="citation" data-cites="Grallert2022DHQ">Grallert (2022b)</span>.<a
-href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>For a detailed overview of the state of Arab Periodical
-Studies see my <span class="citation"
-data-cites="Grallert+2020">(Grallert 2021a)</span>.<a href="#fnref2"
-class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn3"><p>For an introduction to the particularities of Arabic
 script see <span class="citation" data-cites="Nemeth+2017">Nemeth (2017,
 14–22)</span>; <span class="citation"
@@ -2241,44 +2237,15 @@ role="doc-backlink">↩︎</a></p></li>
 <li id="fn8"><p>For a detailed project description see <span
 class="citation" data-cites="Grallert2022DHQ">Grallert (2022b)</span>.<a
 href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9"><p>The endpoint at <a
-href="http://cts.informatik.uni-leipzig.de/muqtabas/cts/"
+<li id="fn9"><p><span class="citation"
+data-cites="Grallert+2017a">(Grallert et al. 2017)</span>. The endpoint
+at <a href="http://cts.informatik.uni-leipzig.de/muqtabas/cts/"
 class="uri">http://cts.informatik.uni-leipzig.de/muqtabas/cts/</a> is
-still functional as of January 2023 <span class="citation"
-data-cites="Grallert+2017a">(Grallert et al. 2017)</span>.<a
-href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10"><p>E.g. <span class="Transcription"
-data-custom-style="Transcription">al-Muqtabas</span> <a
-href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_41.TEIP5.xml">4
-(5/6)</a> and <a
-href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_94.TEIP5.xml">8
-(11/12)</a>.<a href="#fnref10" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn11"><p>Technical information on the project is scarce and
-contradictory despite two publications by the project leaders; <span
-class="citation" data-cites="Qasem+2015 Matusiak+2009">(Abu Harb 2015;
-Matusiak and Abu Harb 2009)</span><a href="#fnref11"
+still functional as of January 2023.<a href="#fnref9"
 class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn12"><p>In other instances, such as the journals <a
-href="https://github.com/OpenArabicPE/journal_lughat-al-arab"><em>Lughat
-al-ʿArab</em></a> and <a
-href="https://github.com/OpenArabicPE/journal_al-ustadh"><em>al-Ustādh</em></a>,
-<em>al-Maktaba al-shāmila</em> did provide page breaks that correspond
-to a printed edition.<a href="#fnref12" class="footnote-back"
-role="doc-backlink">↩︎</a></p></li>
-<li id="fn13"><p><span class="citation"
-data-cites="OpenArabicPE:journal_al-haqaiq">Grallert et al.
-(2022)</span>; <span class="citation"
-data-cites="OpenArabicPE:journal_al-manar">Grallert (2019a)</span>;
-<span class="citation"
-data-cites="OpenArabicPE:journal_al-muqtabas">Grallert et al.
-(2020)</span>; <span class="citation"
-data-cites="OpenArabicPE:journal_al-ustadh">Grallert (2019b)</span>;
-<span class="citation"
-data-cites="OpenArabicPE:journal_al-zuhur">Grallert (2021b)</span>;
-<span class="citation"
-data-cites="OpenArabicPE:journal_lughat-al-arab">Grallert and Funk
-(2022)</span>. Since <span class="persName"
+<li id="fn10"><p>The current cut-off date is 1918.<a href="#fnref10"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>Since <span class="persName"
 data-custom-style="persName">Riḍā</span>’s <span class="Transcription"
 data-custom-style="Transcription">Tafsīr</span>, which accounts for
 about one fifth of <span class="Transcription"
@@ -2287,15 +2254,30 @@ included <span class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>Shamela</em></span>’s
 transcription, it is also missing from the digital edition. See <span
 class="citation" data-cites="Zemmin+2016">Zemmin (2016, 232)</span>.<a
-href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn14"><p>The current cut-off date is 1918.<a href="#fnref14"
+href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>E.g. <span class="Transcription"
+data-custom-style="Transcription">al-Muqtabas</span> <a
+href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_41.TEIP5.xml">4
+(5/6)</a> and <a
+href="https://openarabicpe.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_94.TEIP5.xml">8
+(11/12)</a>.<a href="#fnref12" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>Technical information on the project is scarce and
+contradictory despite two publications by the project leaders; <span
+class="citation" data-cites="Qasem+2015 Matusiak+2009">(Abu Harb 2015;
+Matusiak and Abu Harb 2009)</span><a href="#fnref13"
 class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn15"><p>Size includes <span class="Abbreviation"
-data-custom-style="Abbreviation">TEI</span> files and bibliographic
-metadata (<span class="Abbreviation"
-data-custom-style="Abbreviation">BibTeX</span>, <span
-class="Abbreviation" data-custom-style="Abbreviation">MODS</span>).<a
-href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>In other instances, such as the journals <a
+href="https://github.com/OpenArabicPE/journal_lughat-al-arab"><span
+class="Transcription" data-custom-style="Transcription">Lughat
+al-ʿArab</span></a> and <a
+href="https://github.com/OpenArabicPE/journal_al-ustadh"><span
+class="Transcription"
+data-custom-style="Transcription">al-Ustādh</span></a>, <span
+class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Shamela</em></span> did provide
+page breaks that correspond to a printed edition.<a href="#fnref14"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 </body>
