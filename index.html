@@ -635,10 +635,9 @@ nineteenth-century Eastern Mediterranean</h2>
 <nav id="TOC" role="doc-toc">
 <ul>
 <li><a href="#introduction" id="toc-introduction">Introduction</a></li>
-<li><a
-href="#creating-knowledge-about-artifacts-or-gathering-and-recording-data-about-data"
-id="toc-creating-knowledge-about-artifacts-or-gathering-and-recording-data-about-data">Creating
-knowledge about artifacts or gathering and recording data about data</a>
+<li><a href="#creating-knowledge-about-artifacts"
+id="toc-creating-knowledge-about-artifacts">Creating knowledge about
+artifacts</a>
 <ul>
 <li><a
 href="#the-representational-power-of-monolingual-infrastructures-and-latin-script"
@@ -691,7 +690,7 @@ infrastructures to keep track of the events and developments I was
 interested in. Working with textual material in Arabic—one of the six
 official working languages of the United Nations but also a severely
 under-resourced language in the digital realm—and in a region with
-severely limited access to utilities forced me to learn more about the
+limited access to utilities forced me to learn more about the
 nitty-gritty details of the multidimensional infrastructural
 underpinnings of modern scholarship than I ever wanted.</p>
 <p>In spring 2015, I was part of the first Digital Humanities Institute
@@ -702,30 +701,47 @@ Arabic-speaking material. I also met Alex Gil, who introduced me to the
 idea of <span class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>minimal computing</em></span></p>
 <p>The two projects featured in this essay, <a
-href="https://projectjaraid.github.io/">Jarāʾid</a> and “Open Arabic
-Periodical Editions (OpenArabicPE)”<a href="#fn2" class="footnote-ref"
-id="fnref2" role="doc-noteref"><sup>2</sup></a>, were born out of a
-two-fold need and with a simple idea: Creatively repurpose existing open
-data, tools, and infrastructures in order to provide sustainable public
-and free access to reliable knowledge about periodicals as well as
-high-quality digital editions and to do so not just in Latinized
-transcriptions as is established scholarly practice in the Global North
-but in their original script and languages.</p>
-<p>This essay is structured in two sections. The first section is
-concerned with creating the necessary knowledge about the history of the
-Arabic periodical press, its material artefacts, and existing digital
-remediations. It introduces catalogues as historical documents and the
-consequences of hegemonic monolingual technological infrastructures of
-the Global North for creating and recording knowledge about cultural
-artefacts and practices of societies in the Global South. Here, I use
-Arabic as a prime example how character encodings, rendering engines,
-and a complete lack of interest from market-dominating software vendors
-and platforms exercise epistemic violence <span class="citation"
-data-cites="Fiormonte2021Taxation">(Fiormonte 2021)</span>.</p>
-<h2
-id="creating-knowledge-about-artifacts-or-gathering-and-recording-data-about-data">Creating
-knowledge about artifacts or gathering and recording data about
-data</h2>
+href="https://projectjaraid.github.io/">Jarāʾid</a> and Open Arabic
+Periodical Editions (<span class="Abbreviation"
+data-custom-style="Abbreviation">OpenArabicPE</span>)<a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>,
+were born out of a two-fold need and with a simple idea: Creatively
+repurpose existing open data, tools, and infrastructures in order to
+provide sustainable public and free access to reliable knowledge about
+periodicals as well as high-quality digital editions and to do so not
+just in Latinized transcriptions as is established scholarly practice in
+the Global North but in their original script and languages. Both
+projects can be considered fairly successful attempts at applying a
+minimal computing approach to address our severely limited resources:
+Jarāʾid currently holds information on 3550 Arabic periodical titles
+published globally until 1929, including holding-information on 775
+titles in 233 library collections and links to 233 at least partially
+digitized titles. <span class="Abbreviation"
+data-custom-style="Abbreviation">OpenArabicPE</span> provides a corpus
+of openly accessible digital scholarly editions of six journals
+published between 1892 and 1918 in Baghdad, Beirut, Cairo, and Damascus
+with a total of 41 volumes, 645 individual issues, and more than 6
+million words.</p>
+<p>The first part of this essay is concerned with creating the necessary
+knowledge about the history of the Arabic periodical press, its material
+artifacts, and existing digital remediations. It introduces catalogues
+as historical documents and the consequences of hegemonic technological
+infrastructures of the Global North for creating and recording knowledge
+about cultural artifacts and practices of societies in the Global South.
+Here, I use Arabic as a prime example how character encodings, rendering
+engines, and a complete lack of interest from market-dominating software
+vendors and platforms exercise epistemic violence <span class="citation"
+data-cites="Fiormonte2021Taxation">(Fiormonte 2021)</span>. Finally, I
+discuss our project to produce a crowd-sourced union list of all Arabic
+periodicals published until 1929.</p>
+<p>The second part turns to making cultural artifacts accessible to
+human readers and computational methods. It briefly discusses existing
+digital artifacts as being limited by the state of OCR-technologies and
+fractured data silos, paywalls, and geofencing before I turn to our
+project Open Arabic Periodical Editions as a practical critique of
+infrastructures of exclusion.</p>
+<h2 id="creating-knowledge-about-artifacts">Creating knowledge about
+artifacts</h2>
 <p>The first need, therefore, was (and still is) a need for improving
 our knowledge about periodicals as the embodiment of socio-economic
 relations, intellectual traditions, and political frameworks, their
@@ -736,7 +752,8 @@ to investigate the extent of food riots across cities of the Syrian
 hinterland in summer 1910 <span class="citation"
 data-cites="Grallert+2019">(C.f. Grallert 2020)</span>, one would need
 to know which papers, if at all, were published in Hama, Homs or Nablus
-and therefore potentially published eye-witness accounts (fig. 1). One
+and therefore potentially printed eye-witness accounts (fig. 1 presents
+such information based on our cataloguing project introduced below). One
 would then need to establish if copies survived the turmoil that wreaked
 havoc upon the region and its cultural heritage over the last century,
 where to find surviving copies, and how to access them.</p>
@@ -751,9 +768,10 @@ periodicals published in Greater Syria between 1908 and 1912 based on
 data-cites="MestyanEtAl2020JaraidDataset">(Mestyan, Grallert, and et al.
 2020a)</span></figcaption>
 </figure>
-<p>At this point we have to acknowledge the multi-layered digital
-divide, a chicken-egg problem of interwoven that is difficult to tease
-appart.</p>
+<p>At this point we have to acknowledge that digitization is political
+and inseparable from multi-layered digital divides—a chicken-egg problem
+of interwoven knowledge systems, representations, and socio-technical
+infrastructures that is difficult to tease apart.</p>
 <p>Despite quotidian impressions to the contrary, many library
 catalogues have not been digitized or published online. This is
 particularly true for institutions outside the Global North and
@@ -1186,7 +1204,7 @@ data-custom-style="EmphasisCustom"><em>sustainability</em></span>, and
 data-custom-style="EmphasisCustom"><em>credibility</em></span>.</p>
 <figure>
 <img
-src="/Users/Shared/BachUni/BachBibliothek/GitHub/Sihafa/sihafa_visualization/maps/map-example_sf_mena_en-status_scatterpie.png"
+src="/Users/Shared/BachUni/BachBibliothek/GitHub/Sihafa/sihafa_visualization/maps/map-data-set-periodicals_1789-1929-scatterpie-mena-label_en.png"
 id="fig:map-periodicals-status"
 alt="Figure 10: Geographic distribution of Arabic periodical titles published across South West Asia and North Africa (SWANA) between 1789–1929. The size of the pie charts corresponds to the total number of titles published at a location. Slices show the percentage of known holdings and digitized collections" />
 <figcaption aria-hidden="true">Figure 10: Geographic distribution of
@@ -1228,7 +1246,7 @@ explained by the knowledge gap and interrelated survival and collection
 biases. Here, we are interested in the meaning of <span
 class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>digitized</em></span>. The vast
-majority of those 148 periodicals is solely available as digital
+majority of those 233 periodicals is solely available as digital
 facsimiles due to the challenges Arabic script poses to traditional,
 segmentation-based approaches to computational text recognition.
 Accuracy rates for leading Arabic <span class="Abbreviation"
@@ -1246,8 +1264,8 @@ interfaces return high numbers of false positives. With the extent of
 false negatives—strings not found even though they are present in the
 original—impossible to determine, such data layers are nigh impossible
 to use beyond anecdotal evidence <span class="citation"
-data-cites="Grallert2022DHQ Grallert+2020">(Grallert 2021, 64–65; 2022b,
-sec. 13)</span>.</p>
+data-cites="Grallert2022DHQ Grallert2021GG">(Grallert 2021, 64–65;
+2022b, sec. 13)</span>.</p>
 <p><span class="Abbreviation"
 data-custom-style="Abbreviation">OCR</span> technologies for non-Latin
 scripts and ligatures such as Arabic have seen vast improvements with
@@ -1311,7 +1329,7 @@ Weltkrieg im Spiegel hessischer Regionalzeitungen”</span>
 <div id="tbl:digitisation">
 <table>
 <caption>Table 1: Comparison of <span class="EmphasisCustom"
-data-custom-style="EmphasisCustom"><em>digitised</em></span> periodicals
+data-custom-style="EmphasisCustom"><em>digitized</em></span> periodicals
 between the Global South and the Global North</caption>
 <colgroup>
 <col style="width: 11%" />
@@ -1321,7 +1339,7 @@ between the Global South and the Global North</caption>
 <thead>
 <tr class="header">
 <th></th>
-<th>Arabic periodicals (1798–1929)</th>
+<th>Arabic periodicals (1798–1918)</th>
 <th><a href="https://hwk1.hebis.de">WWI as mirrored by Hessian regional
 papers</a></th>
 </tr>
@@ -1334,12 +1352,12 @@ papers</a></th>
 </tr>
 <tr class="even">
 <td>periodicals</td>
-<td>3269 newspapers and journals</td>
+<td>2054 newspapers and journals</td>
 <td>125 newspapers</td>
 </tr>
 <tr class="odd">
-<td>digitised</td>
-<td>145 periodicals</td>
+<td>digitized</td>
+<td>156 periodicals</td>
 <td>125 newspapers with more than 1.5 million pages</td>
 </tr>
 <tr class="even">
@@ -1888,7 +1906,7 @@ Al-Shām as a <span>‘Repertoire of Contention’</span>.”</span> In
 Cronin, 157–76. London: I.B. Tauris. <a
 href="https://doi.org/10.5040/9781838605902.ch-010">https://doi.org/10.5040/9781838605902.ch-010</a>.
 </div>
-<div id="ref-Grallert+2020" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Grallert2021GG" class="csl-entry" role="doc-biblioentry">
 ———. 2021. <span>“Catch Me If You Can! Approaching the Arabic Press of
 the Late Ottoman Eastern Mediterranean Through Digital History.”</span>
 Edited by Simone Lässig. <em>Geschichte Und Gesellschaft</em> 47 (1,
@@ -2193,7 +2211,7 @@ role="doc-endnotes">
 <hr />
 <ol>
 <li id="fn1"><p>For a detailed overview of the state of Arab Periodical
-Studies see <span class="citation" data-cites="Grallert+2020">(Grallert
+Studies see <span class="citation" data-cites="Grallert2021GG">(Grallert
 2021)</span>.<a href="#fnref1" class="footnote-back"
 role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>Available online at <a
