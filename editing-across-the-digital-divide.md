@@ -3,7 +3,7 @@ title: "Editing mundane texts across the digital divide"
 subtitle: "The case of Arabic periodicals from the late nineteenth-century Eastern Mediterranean"
 project: "Digital Humanities in Practice"
 author: Till Grallert
-date: 2023-02-01
+date: 2023-04-04
 status: draft
 ORCID: orcid.org/0000-0002-5739-8094
 DOI: 
